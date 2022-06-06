@@ -26,11 +26,18 @@
     }
     
     .product-section-title {
-        font-size: 1.2vw;
+        font-size: 1vw;
         font-weight: 400;
     }
     
-    .orange-color {
+    .product-section-card_text_title {
+        font-size: 1.4vw;
+        font-weight: 700;
+    }
+    
+    .product-section-card_text_price {
+        font-size: 1.4vw;
+        font-weight: 400;
         color: orange;
     }
     
@@ -41,8 +48,11 @@
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         margin: 10px auto;
         border-radius: 15px;
+        padding: 10px;
     }
 </style>
+
+{% section 'featured-collection' %}
 
 <section class="product-section-wrapper">
     <p class="product-section-label base-font-family center-text">Featured Collection</p>
@@ -55,8 +65,8 @@
         </div>
         <div class="card-wrapper">
             <img class="product-section-image" alt="product" />
-            <p class="product-section-label base-font-family">Product Name</p>
-            <p class="product-section-title base-font-family orange-color">Price</p>
+            <p class="product-section-card_text_title base-font-family">Product Name</p>
+            <p class="product-section-card_text_price base-font-family">Price</p>
         </div>
     </div>
 </section>
