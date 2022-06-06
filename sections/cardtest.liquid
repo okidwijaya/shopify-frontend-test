@@ -1,27 +1,41 @@
 <style>
+    .product-section-wrapper {
+        width: 100%;
+        height: min(500px, 100vw);
+    }
+    
     .base-font-family {
         font-family: 'Tai Heritage Pro', serif;
         color: black;
     }
     
     .product-section-label {
-        font-size: 1.4rem;
+        font-size: 1.6vw;
         font-weight: 700;
     }
     
     .product-section-title {
-        font-size: 1rem;
+        font-size: 1.2vw;
         font-weight: 400;
+    }
+    
+    .orange-color {
+        color: orange;
+    }
+    
+    .card-wrapper {
+        width: 25%;
+        height: max(250px, 350px);
     }
 </style>
 
-<section>
+<section class="product-section-wrapper">
     <p class="product-section-label base-font-family">Featured Collection</p>
     <p class="product-section-title base-font-family">Get the best deal from our product</p>
-    <div>
+    <div class="card-wrapper">
         <img class="product-section-image" alt="product" />
-        <p class="product-name product-section-label base-font-family">Product Name</p>
-        <p class="product-price product-section-label base-font-family">Price</p>
+        <p class="product-section-label base-font-family">Product Name</p>
+        <p class="product-section-title base-font-family orange-color">Price</p>
     </div>
 </section>
 
