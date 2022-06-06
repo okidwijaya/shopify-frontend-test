@@ -61,7 +61,10 @@ endif assign columns_mobile_int = section.settings.columns_mobile | plus: 0 assi
     </div>
 </div>
 
-{% schema %} { "name": "t:sections.featured-collection.name", "tag": "section", "class": "section", "settings": [ { "type": "text", "id": "title", "default": "Featured collection", "label": "t:sections.featured-collection.settings.title.label" }, { "type":
+
+<!-- {% schema %} { "name": "Section name", "settings": [] } {% endschema %} {% stylesheet %} {% endstylesheet %} {% javascript %} {% endjavascript %} -->
+
+{% schema %} { "name": "t:sections.product-collection.name", "tag": "section", "class": "section", "settings": [ { "type": "text", "id": "title", "default": "Featured collection", "label": "t:sections.featured-collection.settings.title.label" }, { "type":
 "select", "id": "heading_size", "options": [ { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" }, { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }, { "value": "h0", "label": "t:sections.all.heading_size.options__3.label"
 } ], "default": "h1", "label": "t:sections.all.heading_size.label" }, { "type": "richtext", "id": "description", "label": "t:sections.featured-collection.settings.description.label" }, { "type": "checkbox", "id": "show_description", "label": "t:sections.featured-collection.settings.show_description.label",
 "default": false }, { "type": "select", "id": "description_style", "label": "t:sections.featured-collection.settings.description_style.label", "options": [ { "value": "body", "label": "t:sections.featured-collection.settings.description_style.options__1.label"
