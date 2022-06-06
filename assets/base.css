@@ -2259,13 +2259,13 @@ input[type='checkbox'] {
 .header__heading-link {
     /* grid-area: heading; */
     justify-self: center;
-    grid-area: navigation;
     margin: auto;
+    text-align: center;
 }
 
 .header__heading-link {
     display: inline-block;
-    padding: 0.75rem;
+    /* padding: 0.75rem; */
     text-decoration: none;
     word-break: break-word;
 }
@@ -2292,9 +2292,9 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 990px) {
-    .header__heading-link {
+    /* .header__heading-link {
         margin-left: -0.75rem;
-    }
+    } */
     /* .header__heading,
     .header__heading-link {
         justify-self: start;
