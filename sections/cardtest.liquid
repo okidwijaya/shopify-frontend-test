@@ -4,6 +4,10 @@
         height: min(500px, 100vw);
     }
     
+    .product-section-wrapper p {
+        text-align: center;
+    }
+    
     .base-font-family {
         font-family: 'Tai Heritage Pro', serif;
         color: black;
@@ -26,12 +30,19 @@
     .card-wrapper {
         width: 25%;
         height: max(250px, 350px);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        margin: 10px auto;
     }
 </style>
 
 <section class="product-section-wrapper">
     <p class="product-section-label base-font-family">Featured Collection</p>
     <p class="product-section-title base-font-family">Get the best deal from our product</p>
+    <div class="card-wrapper">
+        <img class="product-section-image" alt="product" />
+        <p class="product-section-label base-font-family">Product Name</p>
+        <p class="product-section-title base-font-family orange-color">Price</p>
+    </div>
     <div class="card-wrapper">
         <img class="product-section-image" alt="product" />
         <p class="product-section-label base-font-family">Product Name</p>
