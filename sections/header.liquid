@@ -291,26 +291,10 @@
                 </div>
             </details>
         </details-modal>
-        {%- endif -%} {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
-            {%- endif -%}
-            <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-          {%- if section.settings.logo != blank -%}
-            {%- assign image_size_2x = section.settings.logo_width | times: 2 | at_most: 5760 -%}
-            <img srcset="{{ section.settings.logo | image_url: width: section.settings.logo_width }} 1x, {{ section.settings.logo | image_url: width: image_size_2x }} 2x"
-              src="{{ section.settings.logo | image_url: width: section.settings.logo_width }}"
-              loading="lazy"
-              class="header__heading-logo"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
-          {%- endif -%}
-        </a> {%- if request.page_type == 'index' -%}
-        </h1>
-        {%- endif -%} {%- if section.settings.menu != blank -%} {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+        {%- endif -%}
+
+        <!-- nav section -->
+        {%- if section.settings.menu != blank -%} {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu">
             <ul class="list-menu list-menu--inline" role="list">
                 {%- for link in section.settings.menu.links -%}
@@ -401,6 +385,31 @@
             </ul>
         </nav>
         {%- endif -%} {%- endif -%}
+        <!-- end of line menu nav -->
+
+        <!-- start of middle nav h1 / logo -->
+
+        {%- if request.page_type == 'index' -%}
+        <h1 class="header__heading">
+            {%- endif -%}
+            <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+    {%- if section.settings.logo != blank -%}
+      {%- assign image_size_2x = section.settings.logo_width | times: 2 | at_most: 5760 -%}
+      <img srcset="{{ section.settings.logo | image_url: width: section.settings.logo_width }} 1x, {{ section.settings.logo | image_url: width: image_size_2x }} 2x"
+        src="{{ section.settings.logo | image_url: width: section.settings.logo_width }}"
+        loading="lazy"
+        class="header__heading-logo"
+        width="{{ section.settings.logo.width }}"
+        height="{{ section.settings.logo.height }}"
+        alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+      >
+    {%- else -%}
+      <span class="h2">{{ shop.name }}</span>
+    {%- endif -%}
+  </a> {%- if request.page_type == 'index' -%}
+        </h1>
+        {%- endif -%}
+        <!-- end of middle nav h1 / logo -->
 
         <div class="header__icons">
             <details-modal class="header__search">
