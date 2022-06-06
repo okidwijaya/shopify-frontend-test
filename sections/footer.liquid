@@ -16,8 +16,7 @@
 padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; } } {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-
-    {% section 'product-section' %} {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
+    {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
         {%- if section.blocks.size > 0 -%} {%- liquid if section.blocks.size == 9 assign footer_grid_class = 'grid--3-col-tablet' elsif section.blocks.size > 6 assign footer_grid_class = 'grid--4-col-desktop' elsif section.blocks.size > 4 assign footer_grid_class
         = 'grid--3-col-tablet' endif -%}
