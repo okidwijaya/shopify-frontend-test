@@ -1,11 +1,28 @@
 <style>
+    .base-font-family {
+        font-family: 'Tai Heritage Pro', serif;
+        color: black;
+    }
+    
+    .product-section-label {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    
     .product-section-title {
-        color: red;
+        font-size: 1rem;
+        font-weight: 400;
     }
 </style>
 
-<div>
-    <h1 class="product-section-title">Hello world</h1>
-</div>
+<section>
+    <p class="product-section-label base-font-family">Featured Collection</p>
+    <p class="product-section-title base-font-family">Get the best deal from our product</p>
+    <div>
+        <img class="product-section-image" alt="product" />
+        <p class="product-name product-section-label base-font-family">Product Name</p>
+        <p class="product-price product-section-label base-font-family">Price</p>
+    </div>
+</section>
 
 {% schema %} { "name": "Section name", "settings": [] } {% endschema %} {% stylesheet %} {% endstylesheet %} {% javascript %} {% endjavascript %}
