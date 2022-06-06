@@ -20,6 +20,8 @@ endif assign columns_mobile_int = section.settings.columns_mobile | plus: 0 assi
             <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
             {%- endif -%} {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
             <div class="collection__description {{ section.settings.description_style }}">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
+            <p class="product-section-card_text_price base-font-family">Price</p>
+
             {%- endif -%}
         </div>
 
