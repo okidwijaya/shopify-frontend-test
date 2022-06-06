@@ -2257,8 +2257,9 @@ input[type='checkbox'] {
 
 .header__heading,
 .header__heading-link {
-    grid-area: heading;
+    /* grid-area: heading; */
     justify-self: center;
+    margin: auto;
 }
 
 .header__heading-link {
